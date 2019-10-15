@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box; 
+}
+.wrapper {
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.cityName{
+  color:#3F51B5;
+}
+.search-city-input-wrapper{
+    display: inline-block;
+    width: 420px;
+    margin-top: 47px;
+  }
+
+/* Search */
+.search-form {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.form-control.search-control {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  margin: -47px 13px;
+  padding: 15px;
+  position: absolute;
+  right: 0;
+  max-width: 100%;
+}
+.search-btn{
+  cursor: pointer;
+  border: none;
+  background: url(http://milansavov.com/img/zoom.svg) no-repeat 18px center/35px;
+  position: absolute;
+  background-color: #3F51B5;
+  height: 3rem;
+  width: 4rem;
+  outline: 0;
+  border-radius: 9%;
+  top: -2.39rem;
+  margin: 39px -13px;
+  
+}
+section{
+  border-radius: 10px;
+}
+#description{
+  color: #7a7d7d;
+}
+.details{
+  display: flex; 
+  justify-content:space-evenly;
+  text-align: left;
+}
+.mainDetails{
+  margin-top: 4%;
+}
+.secondDetails{
+  
+  -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) ;
+  font-size: 17px;
+}
+#minTemp{
+  color:#12d612;
+  font-weight: bold;
+}
+#maxTemp{
+  color: red;
+  font-weight: bold;
+}
+.tunisiaIcon{
+  height: 30px;
+  width: 30px;;
+}
+.weatherIcon{
+  height: 150px;
+  width: 160px;
+  text-align: center;
+  -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1);
+}
+
+.card {
+  margin: 30px auto;
+  width: 524px;
+  height: 570px;
+  border-radius: 13px;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, .2);
+  padding-top: 1px;
+  -webkit-animation: open 2s cubic-bezier(.39, 0, .38, 1);
+}
+.sunsetSunrise{
+  display: flex;
+  justify-content: space-around;
+}
+.sunriseIcon, .sunsetIcon{
+  height: 70px;
+  width: 70px;
+}
+
+@-webkit-keyframes open {
+  from {
+      padding: 0 30px;
+      height: 0;
+  }
+  to {
+      height: 470px;
+  }
+}
+// Titles animation
+h1 {
+  font-weight: bolder;
+  font-size: 2.25em;
+  -webkit-animation: up 0.9s cubic-bezier(.39, 0, .38, 1) ;
+}
+
+h2,h3,h4 {
+  -webkit-animation: up 1.4s cubic-bezier(.39, 0, .38, 1) ;
+}
+@-webkit-keyframes up {
+  0% {
+      opacity: 0;
+      -webkit-transform: translateY(15px);
+  }
+  50% {
+      opacity: 0;
+      -webkit-transform: translateY(15px);
+  }
+  99% {
+      -webkit-animation-play-state: paused;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+
+

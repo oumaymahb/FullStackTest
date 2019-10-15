@@ -1,0 +1,109 @@
+
+#weatherDeatils {
+    background: #fff;
+    color: #333;
+    width:50%;
+    border-radius: 17px;
+  }
+  #springaApp {
+    background: #8ca5ec;
+    width:50%;
+    border-radius: 17px;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+  
+  }    
+  
+  .flex-container {
+      display: flex;
+      flex-direction: row;
+      padding: 25px 5%;
+      min-height: 100vh;
+      
+      @media screen and (max-width: 600px) {
+        & {
+          flex-wrap: wrap;
+        }
+      }
+  }
+  
+  header {
+    background: #025e90;
+    color: #fff;
+    position: relative;
+    padding: 1em 2em;
+  }
+  
+  header::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  
+  header span {
+    float: left;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: sans-serif;
+  }
+  .main-nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background: #464655;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  
+  .main-nav ul {
+    font-family: sans-serif;
+    margin: 0;
+    list-style: none;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .main-nav a {
+    color: white;
+    display: block;
+    padding: 1em 1em;
+    text-decoration: none;
+  }
+  
+  .main-nav a:hover,
+  .main-nav a:focus{
+    color: #464655; 
+  }
+  
+  @media only screen and (min-width: 700px){
+   
+    .main-nav {
+      height: auto;
+      position: relative;
+      background: transparent;
+      float: right;
+    }
+    
+    .main-nav li {
+      display: inline-block;
+      border: none;
+      margin-left: 2em;
+    }
+    
+    .main-nav a {
+      padding: 0;
+      margin-left: 2em;
+    }
+    
+    .main-nav a:hover,.main-nav a:focus {
+      background: transparent;
+    }
+  }

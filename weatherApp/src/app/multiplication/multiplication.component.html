@@ -1,0 +1,13 @@
+<h1> Multiplication </h1>
+<div>
+    <form>
+        <input type="number" id="firstNumber" name="firstNumber" [(ngModel)]="firstNumber"
+            placeholder="Enter the first number.." />
+        <input type="number" id="secondNumber" name="secondNumber" [(ngModel)]="secondNumber"
+            placeholder="Enter the second number.." />
+        <button class="calculationBtn" (click)="calculate(firstNumber,secondNumber)">Calculate</button>
+        <button class="cancelBtn" type="reset">Cancel</button>
+
+    </form>
+</div>
+<p *ngIf="showResult">The result is : {{result}}</p>

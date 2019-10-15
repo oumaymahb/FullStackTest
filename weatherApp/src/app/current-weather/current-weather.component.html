@@ -1,0 +1,42 @@
+
+        <h1> Weather Application </h1>
+        <form class="search-form ">
+            <div class="search-city-input-wrapper ">
+                <input class="form-control search-control "  [(ngModel)]="city"  id="search" type="text"
+                auto-complete 
+                [source]="capitals" 
+                [max-num-list]="4"  
+                [close-on-focusout]="false"
+                placeholder="Search city..." name="search" >          
+            </div>
+               <button class="search-btn" (click)="open(city)"></button>
+              </form>
+
+          <div class="card" *ngIf="show">
+              <h1 class="cityName">{{cityName}} </h1>
+              <div class="details">
+                  <div>
+                      <img  class="weatherIcon" src="http://openweathermap.org/img/wn/{{ icon }}@2x.png">
+                  </div>
+                  <div class="mainDetails">
+                    <h2>{{state}} | {{temp}}°c</h2>
+                    <h3 id="description">{{description}}</h3>
+                  </div>
+            </div>  
+            <div class="secondDetails">
+                    <p><span  id="minTemp">Min:</span>  {{tempMin}}°c | <span id="maxTemp"> Max : </span>{{tempMax}}°c </p>
+                    <p> Humidity: {{humidity}} %</p>
+                    <p> Wind Speed: {{speed}} m/s</p>
+                    <p> Pressure: {{pressure}} hPa </p>
+                    <section class="sunsetSunrise">
+                      <div>
+                          <img class="sunriseIcon" src="..\assets\pictures\sunrise.png" /><p>{{sunriseTime | date:'shortTime' }}</p>
+                      </div>
+                       <div>
+                        <img class="sunsetIcon" src="..\assets\pictures\sunset.png" /><p>{{sunsetTime | date:'shortTime' }}</p>
+                      </div>
+                    </section>
+            </div>
+                    
+          </div>
+  

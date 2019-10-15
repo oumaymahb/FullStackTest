@@ -1,0 +1,46 @@
+#springaApp {
+    background: #8ca5ec;
+    width:50%;
+  }
+/* Calculation Form*/
+#firstNumber, #secondNumber {
+	margin:15px 0;
+	padding:15px 5px;
+	width:83%;
+	outline:none;
+	border:1px solid #bbb;
+	border-radius:20px;
+	display:inline-block;
+}
+p{
+	font-weight: bold;
+	font-size: 17px;
+}
+h1 {
+  font-weight: bolder;
+  font-size: 2.25em;
+  -webkit-animation: up 0.9s cubic-bezier(.39, 0, .38, 1) ;
+}
+.calculationBtn {
+	padding: 13px 15px;
+  background: #3145b5;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.cancelBtn {
+	padding: 13px 15px;
+  background: #020c42;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin: 15px;
+}
+
+.calculationBtn:hover {
+	opacity:0.8;
+}
+
+

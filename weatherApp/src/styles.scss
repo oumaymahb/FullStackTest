@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "custom.scss";
+body{
+  margin: 0px !important;
+    background: #f7f7f7;
+  
+}
+
+.ngui-auto-complete{
+  background-color: white !important;
+  margin: -45px -11px;
+  width: 420px;
+}
+.ngui-auto-complete > ul {
+  box-shadow: 0 0 1rem rgba(0, 0, 255, 0.1) !important;
+  border: none !important;
+  border-radius: 3%;
+}
+
+.ngui-auto-complete .item {
+  padding: 1rem !important;
+  cursor: pointer;
+}
+
+.ngui-auto-complete .item:hover {
+  background-color: rgba(0, 0, 255, 0.1) !important;
+}
+
